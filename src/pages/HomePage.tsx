@@ -1,12 +1,19 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 const HomePage: React.FC = () => {
+
+  // const img1 = "src/assets/img/cheemita.webp"
+
   return (
     <>
-      <div className={`grid grid-cols-1`}>
-        <div className='h-screen w-screen bg-primary'>
-          <h1>SOY UN TEMPLATE DE TSX CON TAILWINDCSS.</h1>
-        </div>
+      <div className={`grid grid-cols-1 bg-primary`}>
+        <NavBar />
+        <>
+          <main className='h-screen w-screen p-10'>
+            {/* <img className='w-10' src={img1} alt="" /> */}
+          </main>
+        </>
       </div>
     </>
   )
